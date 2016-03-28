@@ -23,12 +23,13 @@ body {
 
 header {
   background-color: #18294f;
-  overflow: auto;
+  overflow: hidden;
 }
 
 h1 {
   color: #fff;
   text-align: center;
+  font-size: 2rem;
 }
 
 ul {
@@ -48,8 +49,11 @@ a {
 }
 
 @media only screen and (min-width: 25em) {
+  html {
+    font: 110% "Ubuntu", sans-serif;
+  }
+
   li {
-    padding: 1rem;
     float: left;
     width: 50%;
     text-align: center;
@@ -58,7 +62,12 @@ a {
 }
 
 @media only screen and (min-width: 38em) {
+  html {
+    font: 120%/1.4 "Ubuntu", sans-serif;
+  }
+
   li {
+    padding: 1rem;
     width: 25%;
     text-align: center;
   }
@@ -66,6 +75,10 @@ a {
 }
 
 @media only screen and (min-width: 60em) {
+  html {
+    font: 130%/1.5 "Ubuntu", sans-serif;
+  }
+
   h1 {
     float: left;
     padding-left: 1rem;
@@ -74,7 +87,12 @@ a {
 
   ul {
     float: right;
-    width: 35rem;
+    width: 30rem;
+  }
+
+  li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
 }
