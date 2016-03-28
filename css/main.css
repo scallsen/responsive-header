@@ -1,0 +1,80 @@
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #18294f;
+  overflow: auto;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  margin: 0;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #6c8fe0;
+}
+
+@media only screen and (min-width: 25em) {
+  li {
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+  li {
+    width: 25%;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+  h1 {
+    float: left;
+    padding-left: 1rem;
+    text-align: left;
+  }
+
+  ul {
+    float: right;
+    width: 35rem;
+  }
+
+}
