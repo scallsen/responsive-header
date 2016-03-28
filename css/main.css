@@ -4,7 +4,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font: 100%/1.3 "Ubuntu", sans-serif;
+  font: normal 100%/1.3 Ubuntu, sans-serif;
 }
 
 *, *::before, *::after {
@@ -24,33 +24,41 @@ body {
 header {
   background-color: #18294f;
   overflow: hidden;
+  color: #fff;
 }
 
-h1 {
-  color: #fff;
+header h1 {
   text-align: center;
   font-size: 2rem;
 }
 
-ul {
+nav ul {
   padding: 0;
+  font-size: 1.125rem;
 }
 
-li {
+nav li {
   list-style: none;
   padding: 0.5rem;
   margin: 0;
   display: block;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: #6c8fe0;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  background-color: #6c8fe0;
+  color: #fff;
 }
 
 @media only screen and (min-width: 25em) {
+
   html {
-    font: 110% "Ubuntu", sans-serif;
+    font-size: 110%;
   }
 
   li {
@@ -62,8 +70,10 @@ a {
 }
 
 @media only screen and (min-width: 38em) {
+
   html {
-    font: 120%/1.4 "Ubuntu", sans-serif;
+    font-size: 120%;
+    line-height: 1.4;
   }
 
   li {
@@ -75,8 +85,10 @@ a {
 }
 
 @media only screen and (min-width: 60em) {
+
   html {
-    font: 130%/1.5 "Ubuntu", sans-serif;
+    font-size: 130%;
+    line-height: 1.5;
   }
 
   h1 {
@@ -94,9 +106,11 @@ a {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
-
 }
 
 @media only screen and (min-width: 90em) {
 
+  html {
+    font-size: 130%;
+  }
 }
